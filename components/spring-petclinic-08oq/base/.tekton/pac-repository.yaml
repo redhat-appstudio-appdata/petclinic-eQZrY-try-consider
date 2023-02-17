@@ -1,0 +1,15 @@
+apiVersion: pipelinesascode.tekton.dev/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    appstudio.openshift.io/application: petclinic
+    appstudio.openshift.io/component: spring-petclinic-08oq
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: spring-petclinic-08oq
+  namespace: burrsitis-tenant
+spec:
+  url: https://github.com/burrsitis/spring-petclinic
