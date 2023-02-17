@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: spring-petclinic-08oq
+  namespace: burrsitis-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:56424f5475e1aa1ec0058e9b09e4dac915d4d057d701bc55eb4033f5c7068139
+        name: my-java-springboot
+        resources: {}
+status: {}
